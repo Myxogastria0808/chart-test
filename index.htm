@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>D3.js　CSVファイルからデータを読み込んでから縦棒グラフを表示する</title>
+ 
+	<style>
+	svg{
+		width:320px;
+		height:340px;
+		border:2px solid black;
+	}
+	rect{fill:green;}
+	.fillPink{fill:pink;}
+ 
+ 
+	/*
+		縦棒グラフにラベルを表示する設定
+	*/
+	.barNum{
+		font-size:10px;
+		text-anchor:middle;
+	}
+	
+	.axis text{
+		font-family:sans-serif;
+		font-size:11px;
+	}
+	.axis path,
+	.axis line{
+		fill:none;
+		stroke:green;
+	}
+	.axisX line{
+		fill:none;
+		stroke:black;
+	}
+	.barName{
+		font-size:9px;
+		text-anchor:middle;
+	}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.js" integrity="sha512-pJbXh9nxFa1tkmI3Gxiay8+mKTW+QvM8aMrTSR4xcw671sTWkvlHBgnyqXCRr1HFkE0YwhoRZwcdUFFxP4D9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+	<h2>CSVファイルからデータを読み込んで、縦棒グラフを表示</h2>
+	<svg id="graph"></svg>
+	<script src="test.js"></script>
+</body>
+</html>
